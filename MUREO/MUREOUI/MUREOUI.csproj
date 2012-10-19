@@ -1,0 +1,1489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FA3AF56-5D95-4EF3-9E72-77B6EAA9DA97}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MUREOUI</RootNamespace>
+    <AssemblyName>MUREOUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Administration\AddApprvr.aspx" />
+    <Content Include="Administration\AddApprvrGrp.aspx" />
+    <Content Include="Administration\AddBudgetCenter.aspx" />
+    <Content Include="Administration\AddCoachingBox.aspx" />
+    <Content Include="Administration\AddCoachingConfirm.aspx" />
+    <Content Include="Administration\AddConcurrenceGroup.aspx" />
+    <Content Include="Administration\AddConvertingMachine.aspx" />
+    <Content Include="Administration\AddDataCoordinator.aspx" />
+    <Content Include="Administration\AddEOScopeOption.aspx" />
+    <Content Include="Administration\AddMachine.aspx" />
+    <Content Include="Administration\AddOnRouteFYI.aspx" />
+    <Content Include="Administration\AddPreScreenerGroup.aspx" />
+    <Content Include="Administration\AddPurchasingContact.aspx" />
+    <Content Include="Administration\AddSystemOwner.aspx" />
+    <Content Include="Administration\AdminConfirm.aspx" />
+    <Content Include="Administration\ChangeDistributionList.aspx" />
+    <Content Include="Administration\ChangeOriginator.aspx" />
+    <Content Include="Administration\EditApprvr.aspx" />
+    <Content Include="Administration\EditApprvrGrp.aspx" />
+    <Content Include="Administration\EditBudgetCenter.aspx" />
+    <Content Include="Administration\EditCoachingBox.aspx" />
+    <Content Include="Administration\EditDataCoordinator.aspx" />
+    <Content Include="Administration\EditScopeOption.aspx" />
+    <Content Include="Administration\Home.aspx" />
+    <Content Include="Administration\LockEos.aspx" />
+    <Content Include="Administration\MaintainBasicInfo.aspx" />
+    <Content Include="Administration\MaintainBrandSegments.aspx" />
+    <Content Include="Administration\MaintainConcurrenceGroup.aspx" />
+    <Content Include="Administration\MaintainEOScopeBudget.aspx" />
+    <Content Include="Administration\MaintainPurchasingContacts.aspx" />
+    <Content Include="Administration\MaintainSystemOwner.aspx" />
+    <Content Include="Administration\ModifyEOScopeBudget.aspx" />
+    <Content Include="Administration\SearchApproverNames.aspx" />
+    <Content Include="Administration\ViewApprovalGroup.aspx" />
+    <Content Include="Administration\ViewApprovers.aspx" />
+    <Content Include="Administration\ViewApprvr.aspx" />
+    <Content Include="Administration\ViewBasicInfo.aspx" />
+    <Content Include="Administration\ViewBasicInfoRO.aspx" />
+    <Content Include="Administration\ViewBrandSegment.aspx" />
+    <Content Include="Administration\ViewBrandSegments.aspx" />
+    <Content Include="Administration\ViewBudgetCenter.aspx" />
+    <Content Include="Administration\ViewBudgetCenters.aspx" />
+    <Content Include="Administration\ViewCategories.aspx" />
+    <Content Include="Administration\ViewCoachingBox.aspx" />
+    <Content Include="Administration\ViewCoachingBoxes.aspx" />
+    <Content Include="Administration\ViewConcurrenceGroup.aspx" />
+    <Content Include="Administration\ViewDataCoordinator.aspx" />
+    <Content Include="Administration\ViewDataCoordinators.aspx" />
+    <Content Include="Administration\ViewEOScope.aspx" />
+    <Content Include="Administration\ViewEOScopeBudget.aspx" />
+    <Content Include="Administration\ViewEOScopeOptions.aspx" />
+    <Content Include="Administration\ViewGrp.aspx" />
+    <Content Include="Administration\ViewOnRouteFYI.aspx" />
+    <Content Include="Administration\ViewPaperMachine.aspx" />
+    <Content Include="Administration\ViewPreScreenerGroup.aspx" />
+    <Content Include="Administration\ViewPurchasingContact.aspx" />
+    <Content Include="Administration\ViewSystemOwner.aspx" />
+    <Content Include="Administration\View_ConvertMachine.aspx" />
+    <Content Include="Administration\View_PaperMachine.aspx" />
+    <Content Include="Common\ApproverConfirm.aspx" />
+    <Content Include="Common\ApproveYesNo.aspx" />
+    <Content Include="Common\AutoMailSend.aspx" />
+    <Content Include="Common\calendar.aspx" />
+    <Content Include="Common\ChangeApprover.aspx" />
+    <Content Include="Common\CloseOutPreviousCommnets.aspx" />
+    <Content Include="Common\DataExport.aspx" />
+    <Content Include="Common\EditMigrateEvent.aspx" />
+    <Content Include="Common\EOExport.aspx" />
+    <Content Include="Common\EOLocked.aspx" />
+    <Content Include="Common\EOTimeLock.aspx" />
+    <Content Include="Common\ExtractCostSheet.aspx" />
+    <Content Include="Common\FinalRouteConfirm.aspx" />
+    <Content Include="Common\frmAdjEventStartDt.aspx" />
+    <Content Include="Common\frmEditEvent.aspx" />
+    <Content Include="Common\frmNewEvent.aspx" />
+    <Content Include="Common\frmNewProject.aspx" />
+    <Content Include="Common\frmViewEvent.aspx" />
+    <Content Include="Common\frmViewProject.aspx" />
+    <Content Include="Common\FuzzyResults.aspx" />
+    <Content Include="Common\FuzzySearch.aspx" />
+    <Content Include="Common\FYI.aspx" />
+    <Content Include="Common\GCASNumber.aspx" />
+    <Content Include="Common\help.aspx" />
+    <Content Include="Common\HelpAttachments.aspx" />
+    <Content Include="Common\Home.aspx" />
+    <Content Include="Common\NewEO.aspx" />
+    <Content Include="Common\PreScreenApproverConfirm.aspx" />
+    <Content Include="Common\ProjEventsResults.aspx" />
+    <Content Include="Common\PSRA.aspx" />
+    <Content Include="Common\SearchProjEvents.aspx" />
+    <Content Include="Common\SendForConcurrence.aspx" />
+    <Content Include="Common\SendForPreScreners.aspx" />
+    <Content Include="Common\ShowUser.aspx" />
+    <Content Include="Common\ShowUsers.aspx" />
+    <Content Include="Common\SiteTest.aspx" />
+    <Content Include="Common\SystemOwners.aspx" />
+    <Content Include="Common\UpLoad\CloseOut\ActualCostSheet\test.txt.txt" />
+    <Content Include="Common\UpLoad\CloseOut\CloseOutReport\test.txt.txt" />
+    <Content Include="Common\UpLoad\CloseOut\IntialLearningReport\test.txt.txt" />
+    <Content Include="Common\UpLoad\CloseOut\TestPlansUsed\test.txt.txt" />
+    <Content Include="Common\UpLoad\Close_Out\test.txt.txt" />
+    <Content Include="Common\UpLoad\Final\CostSheet\test.txt.txt" />
+    <Content Include="Common\UpLoad\Final\FormulaCardInfo\test.txt.txt" />
+    <Content Include="Common\UpLoad\Final\LabSamples\test.txt.txt" />
+    <Content Include="Common\UpLoad\Final\OtherSupp\test.txt.txt" />
+    <Content Include="Common\UpLoad\Final\QA\test.txt.txt" />
+    <Content Include="Common\UpLoad\Final\TestFlowMatrix\test.txt.txt" />
+    <Content Include="Common\UpLoad\Final\TestPlans\test.txt.txt" />
+    <Content Include="Common\UpLoad\sitetest\test.txt.txt" />
+    <Content Include="Common\ViewComments.aspx" />
+    <Content Include="Common\ViewEO.aspx" />
+    <Content Include="Common\ViewSiteTest.aspx" />
+    <Content Include="Common\YESNO.aspx" />
+    <Content Include="Common\YESNOPSRA.aspx" />
+    <Content Include="Images\actn037.gif" />
+    <Content Include="Images\actn045.gif" />
+    <Content Include="Images\add-a-coaching-box.gif" />
+    <Content Include="Images\add-another-gcas-no.gif" />
+    <Content Include="Images\Add-Another-GCAS-Number.gif" />
+    <Content Include="Images\add-approval-group.gif" />
+    <Content Include="Images\add-approver.gif" />
+    <Content Include="Images\add-brand-segment.gif" />
+    <Content Include="Images\add-budget-center.gif" />
+    <Content Include="Images\Add-comment.gif" />
+    <Content Include="Images\add-gcas.gif" />
+    <Content Include="Images\add-new-concurrence-group.gif" />
+    <Content Include="Images\add-ps-ra-information.gif" />
+    <Content Include="Images\add-psra-information.gif" />
+    <Content Include="Images\add-purchasing-contact.gif" />
+    <Content Include="Images\add.gif" />
+    <Content Include="Images\addn-new-icon.gif" />
+    <Content Include="Images\addressbook.gif" />
+    <Content Include="Images\adjust-start-dates.gif" />
+    <Content Include="Images\Admin-Close-out.jpg" />
+    <Content Include="Images\All-goto-eo.gif" />
+    <Content Include="Images\aplly-close-window.gif" />
+    <Content Include="Images\Apply-and-Close-Window.gif" />
+    <Content Include="Images\apply-another-code.gif" />
+    <Content Include="Images\approval-not-necessary.gif" />
+    <Content Include="Images\arrow1.gif" />
+    <Content Include="Images\arrow_down1.gif" />
+    <Content Include="Images\Back.gif" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\bot_left_corner_bit.gif" />
+    <Content Include="Images\bot_right_corner_bit.gif" />
+    <Content Include="Images\Bounty-Test-Request.jpg" />
+    <Content Include="Images\browse.gif" />
+    <Content Include="Images\bullet.gif" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Images\cancel-but.gif" />
+    <Content Include="Images\cancel.gif" />
+    <Content Include="Images\cancel1.gif" />
+    <Content Include="Images\cancel_Status.gif" />
+    <Content Include="Images\Change-Approver-Name.gif" />
+    <Content Include="Images\change-approver.gif" />
+    <Content Include="Images\Charmin-Test-Request.jpg" />
+    <Content Include="Images\check-concurrence-status.gif" />
+    <Content Include="Images\clear-values.gif" />
+    <Content Include="Images\close-out-nor.gif" />
+    <Content Include="Images\close-out-over.gif" />
+    <Content Include="Images\Close-Out-Route.gif" />
+    <Content Include="Images\Close-out-This-Site-Test.jpg" />
+    <Content Include="Images\collapse.gif" />
+    <Content Include="Images\collapseall.gif" />
+    <Content Include="Images\collpaseall.gif" />
+    <Content Include="Images\copy-to--revise.jpg" />
+    <Content Include="Images\copy-to-create-new.jpg" />
+    <Content Include="Images\cpllapse-all.gif" />
+    <Content Include="Images\create-approval-group.gif" />
+    <Content Include="Images\create-approver.gif" />
+    <Content Include="Images\create-basic-information.gif" />
+    <Content Include="Images\create-brand-segment.gif" />
+    <Content Include="Images\create-budget-center.gif" />
+    <Content Include="Images\create-coaching-box.gif" />
+    <Content Include="Images\create-concurrence-group.gif" />
+    <Content Include="Images\create-convert-machine.gif" />
+    <Content Include="Images\create-data-coordinator.gif" />
+    <Content Include="Images\create-eo-scope-option.gif" />
+    <Content Include="Images\create-eo.gif" />
+    <Content Include="Images\create-machine.gif" />
+    <Content Include="Images\create-new-eo.gif" />
+    <Content Include="Images\create-new-fyi-list.gif" />
+    <Content Include="Images\create-new-fyi.gif" />
+    <Content Include="Images\create-new-icon.gif" />
+    <Content Include="Images\create-new-prescreener.gif" />
+    <Content Include="Images\create-new-prescreener.jpg" />
+    <Content Include="Images\create-new-purchase.gif" />
+    <Content Include="Images\Create-New-Site-System-Owne.gif" />
+    <Content Include="Images\create-paper-machine.gif" />
+    <Content Include="Images\create-purchasing-contact.gif" />
+    <Content Include="Images\create-site-test.gif" />
+    <Content Include="Images\Create-Suggested-Budget-Center.gif" />
+    <Content Include="Images\del-name.jpg" />
+    <Content Include="Images\delete.gif" />
+    <Content Include="Images\delete1.gif" />
+    <Content Include="Images\deleteEvent.gif" />
+    <Content Include="Images\delete_icon.gif" />
+    <Content Include="Images\down-arrow.gif" />
+    <Content Include="Images\edit-approval-group.gif" />
+    <Content Include="Images\edit-approver.gif" />
+    <Content Include="Images\edit-but.gif" />
+    <Content Include="Images\edit-eo.gif" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Images\events-by-category.gif" />
+    <Content Include="Images\eventsby-category.gif" />
+    <Content Include="Images\Example-of-Final-Report.jpg" />
+    <Content Include="Images\Example-of-Test-Plan.jpg" />
+    <Content Include="Images\excel.gif" />
+    <Content Include="Images\excelicon.gif" />
+    <Content Include="Images\expand-all.gif" />
+    <Content Include="Images\expand.gif" />
+    <Content Include="Images\expandall.gif" />
+    <Content Include="Images\export-excel-icon.gif" />
+    <Content Include="Images\export-pilotline-excel.gif" />
+    <Content Include="Images\export-pilotline-to-excel.gif" />
+    <Content Include="Images\export-pilotline-to.gif" />
+    <Content Include="Images\export-pilotline-to1.gif" />
+    <Content Include="Images\Extract-EO-Cost-Sheet.gif" />
+    <Content Include="Images\familycare-logo.gif" />
+    <Content Include="Images\final-nor.gif" />
+    <Content Include="Images\final-over.gif" />
+    <Content Include="Images\Final-Report-Template.jpg" />
+    <Content Include="Images\Final-Route.gif" />
+    <Content Include="Images\fyi-icon.gif" />
+    <Content Include="Images\fyi-not-necessary.gif" />
+    <Content Include="Images\fyi.gif" />
+    <Content Include="Images\fyi1.gif" />
+    <Content Include="Images\goto-eo.gif" />
+    <Content Include="Images\help-icon.gif" />
+    <Content Include="Images\help.gif" />
+    <Content Include="Images\home-icon.gif" />
+    <Content Include="Images\initiative-by-category.gif" />
+    <Content Include="Images\link_bullet.gif" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\loading28.gif" />
+    <Content Include="Images\lockedEOS.gif" />
+    <Content Include="Images\maintai-paper-machine3.gif" />
+    <Content Include="Images\maintain--Approver-groups.gif" />
+    <Content Include="Images\maintain--Approver-Names.gif" />
+    <Content Include="Images\Maintain-Approver-Groups.gif" />
+    <Content Include="Images\Maintain-Approver-Names.gif" />
+    <Content Include="Images\Maintain-Basic-Information.gif" />
+    <Content Include="Images\maintain-brand-segment.gif" />
+    <Content Include="Images\maintain-Budget-centers.gif" />
+    <Content Include="Images\Maintain-Coaching-Box.gif" />
+    <Content Include="Images\Maintain-Concurrence-Groups.gif" />
+    <Content Include="Images\Maintain-Converting--Machin.gif" />
+    <Content Include="Images\maintain-converting--machine.gif" />
+    <Content Include="Images\Maintain-Data-Coordinator-N.gif" />
+    <Content Include="Images\maintain-EO-Scope-Options.gif" />
+    <Content Include="Images\Maintain-OnRoute-FYI.gif" />
+    <Content Include="Images\maintain-paper-machine.gif" />
+    <Content Include="Images\maintain-paper-machine.jpg" />
+    <Content Include="Images\maintain-paper-machine4.gif" />
+    <Content Include="Images\maintain-papermachine.gif" />
+    <Content Include="Images\Maintain-Prescreen-Groups.gif" />
+    <Content Include="Images\Maintain-Purchasing-Contact.gif" />
+    <Content Include="Images\Maintain-System-Owners.gif" />
+    <Content Include="Images\maintainDistributionList.gif" />
+    <Content Include="Images\maintainEOOriginator.gif" />
+    <Content Include="Images\Maintain_Approver_Groups.gif" />
+    <Content Include="Images\Maintain_Approver_name.gif" />
+    <Content Include="Images\Maintain_Budget_Centers.gif" />
+    <Content Include="Images\Maintain_Coaching_box.gif" />
+    <Content Include="Images\Maintain_Concurrence_Grups.gif" />
+    <Content Include="Images\Maintain_Data_Coordinator_name.gif" />
+    <Content Include="Images\Maintain_EO_Scope_Options.gif" />
+    <Content Include="Images\Maintain_onroute_fyi.gif" />
+    <Content Include="Images\Maintain_Prescreen_Groups.gif" />
+    <Content Include="Images\Maintain_Purchasing_Contacts.gif" />
+    <Content Include="Images\Maintain_SO_Scope_Options.gif" />
+    <Content Include="Images\Maintain_System_Owners.gif" />
+    <Content Include="Images\menu-head-bg.gif" />
+    <Content Include="Images\menu_bg.gif" />
+    <Content Include="Images\menu_left_corner_bit.gif" />
+    <Content Include="Images\menu_right_corner_bit.gif" />
+    <Content Include="Images\migrate-Events-data.gif" />
+    <Content Include="Images\Migrate-to-Site-Test.gif" />
+    <Content Include="Images\minus-btn.gif" />
+    <Content Include="Images\minus.jpg" />
+    <Content Include="Images\my-initiatves.gif" />
+    <Content Include="Images\myevents.gif" />
+    <Content Include="Images\Napkin-Test-Request-Form.jpg" />
+    <Content Include="Images\New-Delete.gif" />
+    <Content Include="Images\new-event.gif" />
+    <Content Include="Images\new-project.gif" />
+    <Content Include="Images\next-icon.gif" />
+    <Content Include="Images\next-Page.gif" />
+    <Content Include="Images\next.gif" />
+    <Content Include="Images\next_list.gif" />
+    <Content Include="Images\No.jpg" />
+    <Content Include="Images\ok.gif" />
+    <Content Include="Images\Oldsearch.gif" />
+    <Content Include="Images\open-data-export-page.gif" />
+    <Content Include="Images\open-data-export.gif" />
+    <Content Include="Images\open-EO-as-read-only.gif" />
+    <Content Include="Images\open-eo-for-edit.gif" />
+    <Content Include="Images\opendata-export-page.gif" />
+    <Content Include="Images\Paper-Making-Lab-Request.jpg" />
+    <Content Include="Images\plus-btn.gif" />
+    <Content Include="Images\plus.jpg" />
+    <Content Include="Images\prelim-button.gif" />
+    <Content Include="Images\preliminary-nor.gif" />
+    <Content Include="Images\preliminary-over.gif" />
+    <Content Include="Images\Preliminary-Route.gif" />
+    <Content Include="Images\previous-icon.gif" />
+    <Content Include="Images\previous-Page.gif" />
+    <Content Include="Images\previous.gif" />
+    <Content Include="Images\print-icon.gif" />
+    <Content Include="Images\print-stage-old.gif" />
+    <Content Include="Images\print-stage.gif" />
+    <Content Include="Images\printstage.gif" />
+    <Content Include="Images\project-by-category.gif" />
+    <Content Include="Images\projectsby-category.gif" />
+    <Content Include="Images\projs-by-category.gif" />
+    <Content Include="Images\re-calculate.gif" />
+    <Content Include="Images\remove-icon.gif" />
+    <Content Include="Images\remove.gif" />
+    <Content Include="Images\remove_all.gif" />
+    <Content Include="Images\return-to-home.gif" />
+    <Content Include="Images\route-icon.gif" />
+    <Content Include="Images\Route-Prelim-and-Final.gif" />
+    <Content Include="Images\route.gif" />
+    <Content Include="Images\Save--Create-New-Event.gif" />
+    <Content Include="Images\save-approval-group.gif" />
+    <Content Include="Images\save-approval-group1.gif" />
+    <Content Include="Images\save-approver.gif" />
+    <Content Include="Images\Save-Create-Event-on-Same.gif" />
+    <Content Include="Images\save-create-new-event-samemachine.gif" />
+    <Content Include="Images\save-create-new-event-samemachine1.gif" />
+    <Content Include="Images\save-create-new-event.gif" />
+    <Content Include="Images\save-create-new-event1.gif" />
+    <Content Include="Images\save-exit.gif" />
+    <Content Include="Images\save-exitbutton.gif" />
+    <Content Include="Images\save-icons.gif" />
+    <Content Include="Images\save.gif" />
+    <Content Include="Images\saveresume.gif" />
+    <Content Include="Images\save_exit.gif" />
+    <Content Include="Images\save_exit.jpg" />
+    <Content Include="Images\save_resume.jpg" />
+    <Content Include="Images\Search-Approvers.gif" />
+    <Content Include="Images\search-proj-events.gif" />
+    <Content Include="Images\search.gif" />
+    <Content Include="Images\Send-For-Concurrence.jpg" />
+    <Content Include="Images\Send-For-Prescreeners.JPG" />
+    <Content Include="Images\Send-FYI.jpg" />
+    <Content Include="Images\sort-asc.gif" />
+    <Content Include="Images\sort-desc.gif" />
+    <Content Include="Images\stop.gif" />
+    <Content Include="Images\Submit--Create-New-Project.gif" />
+    <Content Include="Images\submit-but.gif" />
+    <Content Include="Images\submit-create-event-samemachine.gif" />
+    <Content Include="Images\submit-create-new-event.gif" />
+    <Content Include="Images\submit-create-new-proj.gif" />
+    <Content Include="Images\submit-create-new-project.gif" />
+    <Content Include="Images\submit-create-new-project1.gif" />
+    <Content Include="Images\submit-create-project.gif" />
+    <Content Include="Images\submit.gif" />
+    <Content Include="Images\Suggested-Budget-Centers.gif" />
+    <Content Include="Images\Test-Plan-Template.jpg" />
+    <Content Include="Images\Ultra-Test-Request-Form.jpg" />
+    <Content Include="Images\UnlockEOs.gif" />
+    <Content Include="Images\View-Cancelled-EOs-Site-Tes.gif" />
+    <Content Include="Images\View-Cancelled-EOsSite-Test.gif" />
+    <Content Include="Images\view-comments.gif" />
+    <Content Include="Images\View_CancelledEOs.gif" />
+    <Content Include="Images\Yes.JPG" />
+    <Content Include="Reports\AllEOs.aspx" />
+    <Content Include="Reports\ApprovedEOs.aspx" />
+    <Content Include="Reports\ApprovedPreliminaryEOs.aspx" />
+    <Content Include="Reports\ArchivedEOs.aspx" />
+    <Content Include="Reports\CancelledEOs.aspx" />
+    <Content Include="Reports\ConcurrenceStatus.aspx" />
+    <Content Include="Reports\EODelete.aspx" />
+    <Content Include="Reports\EventsbyCategory.aspx" />
+    <Content Include="Reports\GotoEO.aspx" />
+    <Content Include="Reports\MyApprovals.aspx" />
+    <Content Include="Reports\MYEOs.aspx" />
+    <Content Include="Reports\MyEOsAwaiting.aspx" />
+    <Content Include="Reports\MyEvents.aspx" />
+    <Content Include="Reports\ProjectsByCategory.aspx" />
+    <Content Include="Reports\ShowApprovers.aspx" />
+    <Content Include="StyleSheets\EO.css" />
+    <Content Include="StyleSheets\MUREO.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="UserControls\FooterControl.ascx" />
+    <Content Include="UserControls\HeaderControl.ascx" />
+    <Content Include="UserControls\LeftNavigationControl.ascx" />
+    <Content Include="UserControls\LeftNavigationControlForAdmin.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddApprvr.aspx.cs">
+      <DependentUpon>AddApprvr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddApprvr.aspx.designer.cs">
+      <DependentUpon>AddApprvr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddApprvrGrp.aspx.cs">
+      <DependentUpon>AddApprvrGrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddApprvrGrp.aspx.designer.cs">
+      <DependentUpon>AddApprvrGrp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddBudgetCenter.aspx.cs">
+      <DependentUpon>AddBudgetCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddBudgetCenter.aspx.designer.cs">
+      <DependentUpon>AddBudgetCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddCoachingBox.aspx.cs">
+      <DependentUpon>AddCoachingBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddCoachingBox.aspx.designer.cs">
+      <DependentUpon>AddCoachingBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddCoachingConfirm.aspx.cs">
+      <DependentUpon>AddCoachingConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddCoachingConfirm.aspx.designer.cs">
+      <DependentUpon>AddCoachingConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddConcurrenceGroup.aspx.cs">
+      <DependentUpon>AddConcurrenceGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddConcurrenceGroup.aspx.designer.cs">
+      <DependentUpon>AddConcurrenceGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddConvertingMachine.aspx.cs">
+      <DependentUpon>AddConvertingMachine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddConvertingMachine.aspx.designer.cs">
+      <DependentUpon>AddConvertingMachine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddDataCoordinator.aspx.cs">
+      <DependentUpon>AddDataCoordinator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddDataCoordinator.aspx.designer.cs">
+      <DependentUpon>AddDataCoordinator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddEOScopeOption.aspx.cs">
+      <DependentUpon>AddEOScopeOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddEOScopeOption.aspx.designer.cs">
+      <DependentUpon>AddEOScopeOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddMachine.aspx.cs">
+      <DependentUpon>AddMachine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddMachine.aspx.designer.cs">
+      <DependentUpon>AddMachine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddOnRouteFYI.aspx.cs">
+      <DependentUpon>AddOnRouteFYI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddOnRouteFYI.aspx.designer.cs">
+      <DependentUpon>AddOnRouteFYI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddPreScreenerGroup.aspx.cs">
+      <DependentUpon>AddPreScreenerGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddPreScreenerGroup.aspx.designer.cs">
+      <DependentUpon>AddPreScreenerGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddPurchasingContact.aspx.cs">
+      <DependentUpon>AddPurchasingContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddPurchasingContact.aspx.designer.cs">
+      <DependentUpon>AddPurchasingContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AddSystemOwner.aspx.cs">
+      <DependentUpon>AddSystemOwner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AddSystemOwner.aspx.designer.cs">
+      <DependentUpon>AddSystemOwner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AdminConfirm.aspx.cs">
+      <DependentUpon>AdminConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AdminConfirm.aspx.designer.cs">
+      <DependentUpon>AdminConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ChangeDistributionList.aspx.cs">
+      <DependentUpon>ChangeDistributionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ChangeDistributionList.aspx.designer.cs">
+      <DependentUpon>ChangeDistributionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ChangeOriginator.aspx.cs">
+      <DependentUpon>ChangeOriginator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ChangeOriginator.aspx.designer.cs">
+      <DependentUpon>ChangeOriginator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\EditApprvr.aspx.cs">
+      <DependentUpon>EditApprvr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\EditApprvr.aspx.designer.cs">
+      <DependentUpon>EditApprvr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\EditApprvrGrp.aspx.cs">
+      <DependentUpon>EditApprvrGrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\EditApprvrGrp.aspx.designer.cs">
+      <DependentUpon>EditApprvrGrp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\EditBudgetCenter.aspx.cs">
+      <DependentUpon>EditBudgetCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\EditBudgetCenter.aspx.designer.cs">
+      <DependentUpon>EditBudgetCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\EditCoachingBox.aspx.cs">
+      <DependentUpon>EditCoachingBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\EditCoachingBox.aspx.designer.cs">
+      <DependentUpon>EditCoachingBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\EditDataCoordinator.aspx.cs">
+      <DependentUpon>EditDataCoordinator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\EditDataCoordinator.aspx.designer.cs">
+      <DependentUpon>EditDataCoordinator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\EditScopeOption.aspx.cs">
+      <DependentUpon>EditScopeOption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\EditScopeOption.aspx.designer.cs">
+      <DependentUpon>EditScopeOption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\LockEos.aspx.cs">
+      <DependentUpon>LockEos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\LockEos.aspx.designer.cs">
+      <DependentUpon>LockEos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\MaintainBasicInfo.aspx.cs">
+      <DependentUpon>MaintainBasicInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\MaintainBasicInfo.aspx.designer.cs">
+      <DependentUpon>MaintainBasicInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\MaintainBrandSegments.aspx.cs">
+      <DependentUpon>MaintainBrandSegments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\MaintainBrandSegments.aspx.designer.cs">
+      <DependentUpon>MaintainBrandSegments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\MaintainConcurrenceGroup.aspx.cs">
+      <DependentUpon>MaintainConcurrenceGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\MaintainConcurrenceGroup.aspx.designer.cs">
+      <DependentUpon>MaintainConcurrenceGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\MaintainEOScopeBudget.aspx.cs">
+      <DependentUpon>MaintainEOScopeBudget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\MaintainEOScopeBudget.aspx.designer.cs">
+      <DependentUpon>MaintainEOScopeBudget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\MaintainPurchasingContacts.aspx.cs">
+      <DependentUpon>MaintainPurchasingContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\MaintainPurchasingContacts.aspx.designer.cs">
+      <DependentUpon>MaintainPurchasingContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\MaintainSystemOwner.aspx.cs">
+      <DependentUpon>MaintainSystemOwner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\MaintainSystemOwner.aspx.designer.cs">
+      <DependentUpon>MaintainSystemOwner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ModifyEOScopeBudget.aspx.cs">
+      <DependentUpon>ModifyEOScopeBudget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ModifyEOScopeBudget.aspx.designer.cs">
+      <DependentUpon>ModifyEOScopeBudget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\SearchApproverNames.aspx.cs">
+      <DependentUpon>SearchApproverNames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\SearchApproverNames.aspx.designer.cs">
+      <DependentUpon>SearchApproverNames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewApprovalGroup.aspx.cs">
+      <DependentUpon>ViewApprovalGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewApprovalGroup.aspx.designer.cs">
+      <DependentUpon>ViewApprovalGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewApprovers.aspx.cs">
+      <DependentUpon>ViewApprovers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewApprovers.aspx.designer.cs">
+      <DependentUpon>ViewApprovers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewApprvr.aspx.cs">
+      <DependentUpon>ViewApprvr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewApprvr.aspx.designer.cs">
+      <DependentUpon>ViewApprvr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewBasicInfo.aspx.cs">
+      <DependentUpon>ViewBasicInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewBasicInfo.aspx.designer.cs">
+      <DependentUpon>ViewBasicInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewBasicInfoRO.aspx.cs">
+      <DependentUpon>ViewBasicInfoRO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewBasicInfoRO.aspx.designer.cs">
+      <DependentUpon>ViewBasicInfoRO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewBrandSegment.aspx.cs">
+      <DependentUpon>ViewBrandSegment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewBrandSegment.aspx.designer.cs">
+      <DependentUpon>ViewBrandSegment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewBrandSegments.aspx.cs">
+      <DependentUpon>ViewBrandSegments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewBrandSegments.aspx.designer.cs">
+      <DependentUpon>ViewBrandSegments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewBudgetCenter.aspx.cs">
+      <DependentUpon>ViewBudgetCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewBudgetCenter.aspx.designer.cs">
+      <DependentUpon>ViewBudgetCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewBudgetCenters.aspx.cs">
+      <DependentUpon>ViewBudgetCenters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewBudgetCenters.aspx.designer.cs">
+      <DependentUpon>ViewBudgetCenters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewCategories.aspx.cs">
+      <DependentUpon>ViewCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewCategories.aspx.designer.cs">
+      <DependentUpon>ViewCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewCoachingBox.aspx.cs">
+      <DependentUpon>ViewCoachingBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewCoachingBox.aspx.designer.cs">
+      <DependentUpon>ViewCoachingBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewCoachingBoxes.aspx.cs">
+      <DependentUpon>ViewCoachingBoxes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewCoachingBoxes.aspx.designer.cs">
+      <DependentUpon>ViewCoachingBoxes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewConcurrenceGroup.aspx.cs">
+      <DependentUpon>ViewConcurrenceGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewConcurrenceGroup.aspx.designer.cs">
+      <DependentUpon>ViewConcurrenceGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewDataCoordinator.aspx.cs">
+      <DependentUpon>ViewDataCoordinator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewDataCoordinator.aspx.designer.cs">
+      <DependentUpon>ViewDataCoordinator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewDataCoordinators.aspx.cs">
+      <DependentUpon>ViewDataCoordinators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewDataCoordinators.aspx.designer.cs">
+      <DependentUpon>ViewDataCoordinators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewEOScope.aspx.cs">
+      <DependentUpon>ViewEOScope.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewEOScope.aspx.designer.cs">
+      <DependentUpon>ViewEOScope.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewEOScopeBudget.aspx.cs">
+      <DependentUpon>ViewEOScopeBudget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewEOScopeBudget.aspx.designer.cs">
+      <DependentUpon>ViewEOScopeBudget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewEOScopeOptions.aspx.cs">
+      <DependentUpon>ViewEOScopeOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewEOScopeOptions.aspx.designer.cs">
+      <DependentUpon>ViewEOScopeOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewGrp.aspx.cs">
+      <DependentUpon>ViewGrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewGrp.aspx.designer.cs">
+      <DependentUpon>ViewGrp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewOnRouteFYI.aspx.cs">
+      <DependentUpon>ViewOnRouteFYI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewOnRouteFYI.aspx.designer.cs">
+      <DependentUpon>ViewOnRouteFYI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewPaperMachine.aspx.cs">
+      <DependentUpon>ViewPaperMachine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewPaperMachine.aspx.designer.cs">
+      <DependentUpon>ViewPaperMachine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewPreScreenerGroup.aspx.cs">
+      <DependentUpon>ViewPreScreenerGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewPreScreenerGroup.aspx.designer.cs">
+      <DependentUpon>ViewPreScreenerGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewPurchasingContact.aspx.cs">
+      <DependentUpon>ViewPurchasingContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewPurchasingContact.aspx.designer.cs">
+      <DependentUpon>ViewPurchasingContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ViewSystemOwner.aspx.cs">
+      <DependentUpon>ViewSystemOwner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\ViewSystemOwner.aspx.designer.cs">
+      <DependentUpon>ViewSystemOwner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\View_ConvertMachine.aspx.cs">
+      <DependentUpon>View_ConvertMachine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\View_ConvertMachine.aspx.designer.cs">
+      <DependentUpon>View_ConvertMachine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\View_PaperMachine.aspx.cs">
+      <DependentUpon>View_PaperMachine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\View_PaperMachine.aspx.designer.cs">
+      <DependentUpon>View_PaperMachine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clsSecurity.cs" />
+    <Compile Include="Common\ApproverConfirm.aspx.cs">
+      <DependentUpon>ApproverConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ApproverConfirm.aspx.designer.cs">
+      <DependentUpon>ApproverConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ApproveYesNo.aspx.cs">
+      <DependentUpon>ApproveYesNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ApproveYesNo.aspx.designer.cs">
+      <DependentUpon>ApproveYesNo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AutoMailSend.aspx.cs">
+      <DependentUpon>AutoMailSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AutoMailSend.aspx.designer.cs">
+      <DependentUpon>AutoMailSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\calendar.aspx.cs">
+      <DependentUpon>calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\calendar.aspx.designer.cs">
+      <DependentUpon>calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ChangeApprover.aspx.cs">
+      <DependentUpon>ChangeApprover.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ChangeApprover.aspx.designer.cs">
+      <DependentUpon>ChangeApprover.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CloseOutPreviousCommnets.aspx.cs">
+      <DependentUpon>CloseOutPreviousCommnets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\CloseOutPreviousCommnets.aspx.designer.cs">
+      <DependentUpon>CloseOutPreviousCommnets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DataExport.aspx.cs">
+      <DependentUpon>DataExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\DataExport.aspx.designer.cs">
+      <DependentUpon>DataExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\EditMigrateEvent.aspx.cs">
+      <DependentUpon>EditMigrateEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\EditMigrateEvent.aspx.designer.cs">
+      <DependentUpon>EditMigrateEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\EOExport.aspx.cs">
+      <DependentUpon>EOExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\EOExport.aspx.designer.cs">
+      <DependentUpon>EOExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\EOLocked.aspx.cs">
+      <DependentUpon>EOLocked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\EOLocked.aspx.designer.cs">
+      <DependentUpon>EOLocked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\EOTimeLock.aspx.cs">
+      <DependentUpon>EOTimeLock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\EOTimeLock.aspx.designer.cs">
+      <DependentUpon>EOTimeLock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ExtractCostSheet.aspx.cs">
+      <DependentUpon>ExtractCostSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ExtractCostSheet.aspx.designer.cs">
+      <DependentUpon>ExtractCostSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FinalRouteConfirm.aspx.cs">
+      <DependentUpon>FinalRouteConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FinalRouteConfirm.aspx.designer.cs">
+      <DependentUpon>FinalRouteConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmAdjEventStartDt.aspx.cs">
+      <DependentUpon>frmAdjEventStartDt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\frmAdjEventStartDt.aspx.designer.cs">
+      <DependentUpon>frmAdjEventStartDt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmEditEvent.aspx.cs">
+      <DependentUpon>frmEditEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\frmEditEvent.aspx.designer.cs">
+      <DependentUpon>frmEditEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmNewEvent.aspx.cs">
+      <DependentUpon>frmNewEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\frmNewEvent.aspx.designer.cs">
+      <DependentUpon>frmNewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmNewProject.aspx.cs">
+      <DependentUpon>frmNewProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\frmNewProject.aspx.designer.cs">
+      <DependentUpon>frmNewProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmViewEvent.aspx.cs">
+      <DependentUpon>frmViewEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\frmViewEvent.aspx.designer.cs">
+      <DependentUpon>frmViewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmViewProject.aspx.cs">
+      <DependentUpon>frmViewProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\frmViewProject.aspx.designer.cs">
+      <DependentUpon>frmViewProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FuzzyResults.aspx.cs">
+      <DependentUpon>FuzzyResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FuzzyResults.aspx.designer.cs">
+      <DependentUpon>FuzzyResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FuzzySearch.aspx.cs">
+      <DependentUpon>FuzzySearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FuzzySearch.aspx.designer.cs">
+      <DependentUpon>FuzzySearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FYI.aspx.cs">
+      <DependentUpon>FYI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\FYI.aspx.designer.cs">
+      <DependentUpon>FYI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GCASNumber.aspx.cs">
+      <DependentUpon>GCASNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\GCASNumber.aspx.designer.cs">
+      <DependentUpon>GCASNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\HelpAttachments.aspx.cs">
+      <DependentUpon>HelpAttachments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\HelpAttachments.aspx.designer.cs">
+      <DependentUpon>HelpAttachments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\NewEO.aspx.cs">
+      <DependentUpon>NewEO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\NewEO.aspx.designer.cs">
+      <DependentUpon>NewEO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PreScreenApproverConfirm.aspx.cs">
+      <DependentUpon>PreScreenApproverConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\PreScreenApproverConfirm.aspx.designer.cs">
+      <DependentUpon>PreScreenApproverConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ProjEventsResults.aspx.cs">
+      <DependentUpon>ProjEventsResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ProjEventsResults.aspx.designer.cs">
+      <DependentUpon>ProjEventsResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PSRA.aspx.cs">
+      <DependentUpon>PSRA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\PSRA.aspx.designer.cs">
+      <DependentUpon>PSRA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SearchProjEvents.aspx.cs">
+      <DependentUpon>SearchProjEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SearchProjEvents.aspx.designer.cs">
+      <DependentUpon>SearchProjEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SendForConcurrence.aspx.cs">
+      <DependentUpon>SendForConcurrence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SendForConcurrence.aspx.designer.cs">
+      <DependentUpon>SendForConcurrence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SendForPreScreners.aspx.cs">
+      <DependentUpon>SendForPreScreners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SendForPreScreners.aspx.designer.cs">
+      <DependentUpon>SendForPreScreners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ShowUser.aspx.cs">
+      <DependentUpon>ShowUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ShowUser.aspx.designer.cs">
+      <DependentUpon>ShowUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ShowUsers.aspx.cs">
+      <DependentUpon>ShowUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ShowUsers.aspx.designer.cs">
+      <DependentUpon>ShowUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SiteTest.aspx.cs">
+      <DependentUpon>SiteTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SiteTest.aspx.designer.cs">
+      <DependentUpon>SiteTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SystemOwners.aspx.cs">
+      <DependentUpon>SystemOwners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SystemOwners.aspx.designer.cs">
+      <DependentUpon>SystemOwners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ViewComments.aspx.cs">
+      <DependentUpon>ViewComments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ViewComments.aspx.designer.cs">
+      <DependentUpon>ViewComments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ViewEO.aspx.cs">
+      <DependentUpon>ViewEO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ViewEO.aspx.designer.cs">
+      <DependentUpon>ViewEO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ViewSiteTest.aspx.cs">
+      <DependentUpon>ViewSiteTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ViewSiteTest.aspx.designer.cs">
+      <DependentUpon>ViewSiteTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\YESNO.aspx.cs">
+      <DependentUpon>YESNO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\YESNO.aspx.designer.cs">
+      <DependentUpon>YESNO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\YESNOPSRA.aspx.cs">
+      <DependentUpon>YESNOPSRA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\YESNOPSRA.aspx.designer.cs">
+      <DependentUpon>YESNOPSRA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\AllEOs.aspx.cs">
+      <DependentUpon>AllEOs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AllEOs.aspx.designer.cs">
+      <DependentUpon>AllEOs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ApprovedEOs.aspx.cs">
+      <DependentUpon>ApprovedEOs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ApprovedEOs.aspx.designer.cs">
+      <DependentUpon>ApprovedEOs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ApprovedPreliminaryEOs.aspx.cs">
+      <DependentUpon>ApprovedPreliminaryEOs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ApprovedPreliminaryEOs.aspx.designer.cs">
+      <DependentUpon>ApprovedPreliminaryEOs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ArchivedEOs.aspx.cs">
+      <DependentUpon>ArchivedEOs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ArchivedEOs.aspx.designer.cs">
+      <DependentUpon>ArchivedEOs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CancelledEOs.aspx.cs">
+      <DependentUpon>CancelledEOs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CancelledEOs.aspx.designer.cs">
+      <DependentUpon>CancelledEOs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ConcurrenceStatus.aspx.cs">
+      <DependentUpon>ConcurrenceStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ConcurrenceStatus.aspx.designer.cs">
+      <DependentUpon>ConcurrenceStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EODelete.aspx.cs">
+      <DependentUpon>EODelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\EODelete.aspx.designer.cs">
+      <DependentUpon>EODelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EventsbyCategory.aspx.cs">
+      <DependentUpon>EventsbyCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\EventsbyCategory.aspx.designer.cs">
+      <DependentUpon>EventsbyCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GotoEO.aspx.cs">
+      <DependentUpon>GotoEO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\GotoEO.aspx.designer.cs">
+      <DependentUpon>GotoEO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MyApprovals.aspx.cs">
+      <DependentUpon>MyApprovals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\MyApprovals.aspx.designer.cs">
+      <DependentUpon>MyApprovals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MYEOs.aspx.cs">
+      <DependentUpon>MYEOs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\MYEOs.aspx.designer.cs">
+      <DependentUpon>MYEOs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MyEOsAwaiting.aspx.cs">
+      <DependentUpon>MyEOsAwaiting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\MyEOsAwaiting.aspx.designer.cs">
+      <DependentUpon>MyEOsAwaiting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MyEvents.aspx.cs">
+      <DependentUpon>MyEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\MyEvents.aspx.designer.cs">
+      <DependentUpon>MyEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProjectsByCategory.aspx.cs">
+      <DependentUpon>ProjectsByCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ProjectsByCategory.aspx.designer.cs">
+      <DependentUpon>ProjectsByCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ShowApprovers.aspx.cs">
+      <DependentUpon>ShowApprovers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ShowApprovers.aspx.designer.cs">
+      <DependentUpon>ShowApprovers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FooterControl.ascx.cs">
+      <DependentUpon>FooterControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\FooterControl.ascx.designer.cs">
+      <DependentUpon>FooterControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HeaderControl.ascx.cs">
+      <DependentUpon>HeaderControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HeaderControl.ascx.designer.cs">
+      <DependentUpon>HeaderControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LeftNavigationControl.ascx.cs">
+      <DependentUpon>LeftNavigationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\LeftNavigationControl.ascx.designer.cs">
+      <DependentUpon>LeftNavigationControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LeftNavigationControlForAdmin.ascx.cs">
+      <DependentUpon>LeftNavigationControlForAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\LeftNavigationControlForAdmin.ascx.designer.cs">
+      <DependentUpon>LeftNavigationControlForAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MUREOBAL\MUREOBAL.csproj">
+      <Project>{0F5BC338-9136-4A80-BBE5-7F302851C0C0}</Project>
+      <Name>MUREOBAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MUREOPROP\MUREOPROP.csproj">
+      <Project>{34745FF9-CAD5-413B-A4D3-DA9446169FDC}</Project>
+      <Name>MUREOPROP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Templates\Bounty FP Lab test request.xls" />
+    <Content Include="Common\Templates\Charmin FP Lab test request.xls" />
+    <Content Include="Common\Templates\EO 0708 COST WORKSHEET_082407.xls" />
+    <Content Include="Common\Templates\EO 0809 COST WORKSHEET_080408.xls" />
+    <Content Include="Common\Templates\EO FY10-11 Cost Worksheet v3.xls" />
+    <Content Include="Common\Templates\EO FY11-12 Cost Worksheet v2-1.xls" />
+    <Content Include="Common\Templates\EO FY11-12 Cost Worksheet v2.xlsx" />
+    <Content Include="Common\Templates\EO Test Plan template 030703.doc" />
+    <Content Include="Common\Templates\FC Exception Template r030722.xls" />
+    <Content Include="Common\Templates\Final report example.doc" />
+    <Content Include="Common\Templates\Final report template.doc" />
+    <Content Include="Common\Templates\GetEODataTemplateRev1.xls" />
+    <Content Include="Common\Templates\GetEODataTemplateRev1.xlt" />
+    <Content Include="Common\Templates\GetMURDataTemplate-r04.xls" />
+    <Content Include="Common\Templates\GetMURDataTemplate-r04.xlt" />
+    <Content Include="Common\Templates\GetMUREODataTemplate-r01.xls" />
+    <Content Include="Common\Templates\Help_Mureo_Administration-old.doc" />
+    <Content Include="Common\Templates\Help_Mureo_Administration.doc" />
+    <Content Include="Common\Templates\Help_Mureo_Intro%28projEvents%29.doc" />
+    <Content Include="Common\Templates\Help_Mureo_Intro_projEvents_-old.doc" />
+    <Content Include="Common\Templates\Help_Mureo_Intro_projEvents_.doc" />
+    <Content Include="Common\Templates\Help_Mur_EoSiteTest-old.doc" />
+    <Content Include="Common\Templates\Help_Mur_EoSiteTest.doc" />
+    <Content Include="Common\Templates\Initial PPM set up sheet - first cond_061201.pdf" />
+    <Content Include="Common\Templates\MUREO_Faq.doc" />
+    <Content Include="Common\Templates\MUREO_UserManual.doc" />
+    <Content Include="Common\Templates\Napkins FP Lab test request.xls" />
+    <None Include="Common\Templates\EO FY12-13 Cost Worksheet 5-25-12.xls" />
+    <None Include="Common\Templates\New Folder\GetMURDataTemplate-r08.xls" />
+    <Content Include="Common\Templates\New GCAS Process training.doc" />
+    <Content Include="Common\Templates\Papermaking lab request form.xls" />
+    <Content Include="Common\Templates\PCL Equipement checklist_061101.xls" />
+    <Content Include="Common\Templates\PPM - PCL Time.xls" />
+    <Content Include="Common\Templates\Test Plan example.doc" />
+    <Content Include="Common\Templates\test-3.xls" />
+    <Content Include="Common\Templates\Ultra Soft test request form.xls" />
+    <Content Include="Common\Templates\UMOF Master Blank Form 03072006.xls" />
+    <None Include="Common\UpLoad\CloseOut\ActualCostSheet\1104_12-29-2007_08-20-36_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\CloseOut\ActualCostSheet\1113_12-29-2007_10-15-55_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\CloseOut\CloseOutReport\1104_12-29-2007_08-20-36_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\CloseOut\CloseOutReport\1113_12-29-2007_10-15-55_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\CloseOut\IntialLearningReport\1113_12-29-2007_10-15-55_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\CloseOut\TestPlansUsed\1113_12-29-2007_10-15-55_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\Final\CostSheet\1104_12-29-2007_07-51-50_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\Final\CostSheet\1104_12-29-2007_07-55-16_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\Final\CostSheet\1110_12-29-2007_09-14-05_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\Final\CostSheet\1113_12-29-2007_09-36-43_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\Final\TestPlans\1113_12-29-2007_09-36-43_TEST DOCUMENT.doc" />
+    <None Include="Common\UpLoad\Preliminary\1062_12-25-2007_04-32-22_Suresh 3 Doc.doc" />
+    <None Include="Common\UpLoad\Preliminary\1115_12-30-2007_01-24-12_test-3.xls" />
+    <None Include="Common\UpLoad\Preliminary\1115_12-30-2007_01-24-12_testDco2.doc" />
+    <None Include="Common\UpLoad\Templates\FC Exception Template r030722.xls" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1664</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

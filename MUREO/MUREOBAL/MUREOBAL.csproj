@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F5BC338-9136-4A80-BBE5-7F302851C0C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MUREOBAL</RootNamespace>
+    <AssemblyName>MUREOBAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Approver.cs" />
+    <Compile Include="BudgetCtrBO.cs" />
+    <Compile Include="ChangeDistributionBO.cs" />
+    <Compile Include="ChangeOriginatorBO.cs" />
+    <Compile Include="clsApprover.cs" />
+    <Compile Include="clsAttachmentsBA.cs" />
+    <Compile Include="clsBasicinfoBO.cs" />
+    <Compile Include="clsBrandSegmentBO.cs" />
+    <Compile Include="clsConcurrenceBO.cs" />
+    <Compile Include="clsEvent.cs" />
+    <Compile Include="clsFYIRecipientsBO.cs" />
+    <Compile Include="ClsMyEOs.cs" />
+    <Compile Include="clsPlantMachineBO.cs" />
+    <Compile Include="clsPrescreenersBO.cs" />
+    <Compile Include="clsProject.cs" />
+    <Compile Include="clsProjectsByCategory.cs" />
+    <Compile Include="ClsSearch.cs" />
+    <Compile Include="clsSendMail.cs" />
+    <Compile Include="clsSystemOwnerBO.cs" />
+    <Compile Include="CoachingBoxBO.cs" />
+    <Compile Include="ConcurrenceGroup.cs" />
+    <Compile Include="EOBA.cs" />
+    <Compile Include="EOScopeOptionBO.cs" />
+    <Compile Include="MachinesByCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MachinesByCategoryBA.cs" />
+    <Compile Include="MUREOBO.cs" />
+    <Compile Include="PlantMachine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasingContact.cs" />
+    <Compile Include="ReportsBO.cs" />
+    <Compile Include="SearchApprover.cs" />
+    <Compile Include="SendConcurrence.cs" />
+    <Compile Include="SiteTestBA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewDataCoordinatorsBO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MUREODAL\MUREODAL.csproj">
+      <Project>{291EB316-D4DB-4EF1-A688-0A385B053D88}</Project>
+      <Name>MUREODAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MUREOPROP\MUREOPROP.csproj">
+      <Project>{34745FF9-CAD5-413B-A4D3-DA9446169FDC}</Project>
+      <Name>MUREOPROP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

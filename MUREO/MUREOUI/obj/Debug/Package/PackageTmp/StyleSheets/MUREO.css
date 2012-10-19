@@ -1,0 +1,281 @@
+body
+{
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.gclass {
+	background-attachment: fixed;
+	background-image: url(../images/g_class_17.jpg);
+	background-repeat: no-repeat;
+	background-position: 150px;
+}
+.DeleteMsg
+{
+	font-weight: bold;
+	font-size: 18px;
+	vertical-align: middle;
+	font-family: Verdana, Arial;
+	color: Black;
+	height: 2.9em;
+	text-align: center;
+}
+.AdminHeader
+{
+	background-color:#A2B5E7;
+	font-weight: bold;
+	font-size: 19px;
+	vertical-align: middle;
+	font-family: Verdana, Arial;
+	color: navy;
+	height: 1.6em;
+	text-align: center;
+}
+.FormHeader
+{
+	color: #0000FF;
+	font-weight: bold;
+	background-color :#ffffcc;
+	vertical-align :middle ; 
+	font-size: 16px;
+	vertical-align: middle;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 1.5em;
+	text-align: center;
+}
+
+.DataGridBorderColor
+{
+	border-color:Black;
+	
+}
+
+.DataGridFixedHeader 
+{ background-color: A2B5E7; 
+	position:relative; 
+	font-family: Verdana, Arial;
+	font-size:13;
+	font-weight: bold;
+	text-align: left;
+	border: verdana,2,block;
+	top:expression(this.offsetParent.scrollTop);
+}
+
+.SubHeader
+{
+	background:../images/menu-head-bg.gif;
+	background-color:ffcc00; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight: bold;
+	text-align: left;
+}
+.SubHeader1
+{
+	background:../images/menu-head-bg.gif;
+	background-color:ffcc00; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight: bold;
+	
+}
+.AlternateRow1
+{
+font-size: 11px;
+	color:Black; 
+	font-family: Verdana, Arial;
+	background-color: CECECE;
+	text-align: Left;
+	
+}
+.AlternateRow3
+{
+font-size: 11px;
+	color:Black; 
+	font-family: Verdana, Arial;
+	background-color: E4EBFE;
+	text-align: Left;
+	
+}
+
+.AlternateRow2
+{
+	font-size: 11px;
+	color:Black; 
+	font-family: Verdana, Arial;
+	text-align: Left;
+	background-color: white;
+}
+
+.AlternateRow3
+{
+font-size: 11px;
+	color:Black; 
+	font-family: Verdana, Arial;
+	background-color: E4EBFE;
+	text-align: Center;
+	
+}
+
+.AlternateRow4
+{
+	font-size: 11px;
+	color:Black; 
+	font-family: Verdana, Arial;
+	text-align: Center;
+	background-color: C6D4FA;
+}
+
+.AlternateRow5
+{
+	font-size: 11px;
+	color:Black; 
+	font-family: Verdana, Arial;
+}
+
+A:link	{	
+	text-decoration:	none;
+	color:	#3333cc;
+	}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color: #333399;
+	}	
+		
+A:active	{	
+	text-decoration:	none;
+	color:	Green;
+	}	
+		
+A:hover	{	
+	text-decoration:	underline;
+	color:	Green;
+	}
+	
+
+.NoteMsg
+{
+	font-weight: normal;
+	list-style-position: outside;
+	font-size: 8pt;
+	color: #3300FF;
+	font-style: normal;
+	font-family: Verdana;
+	list-style-type: disc;
+
+}
+
+.vFalse
+{
+ display:none;
+}
+
+.TitleRow
+{
+	border-right: gray 0.1em solid;
+	border-top: gray 0.1em solid;
+	font-weight: bold;
+	font-size: 20px;
+	vertical-align: middle;
+	border-left: gray 0.1em solid;
+	color: navy;
+	border-bottom: gray 0.1em solid;
+	font-style: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height: 0.5em;
+	background-color:#9999ff;
+	text-align: center;
+}
+.LabelCellNB
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+	background-color: #dceafa;
+	text-align: right;
+}
+
+.FieldNames
+{
+	font-weight :bold ;
+	font-size :15px;
+	color :Black ;
+	font-family :Verdana Arial;
+	text-align :right; 
+}
+
+.FieldNamesLeft
+{
+	font-weight :bold ;
+	font-size :15px;
+	color :Black ;
+	font-family :Verdana Arial;
+	text-align :Left; 
+}
+
+.astrisk
+{
+	 color :red;
+	 font-size :12px;
+}
+	
+.ValueCellNB
+{
+	font-size: 10px;
+	color: black;
+	font-family: Verdana, Arial;
+	text-align: left;
+}
+.Warning
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: red;
+	font-family: verdana, Arial;
+	list-style-type: disc;
+}
+
+.ErrorMessage
+{
+	font-weight: normal;
+	font-size: 12px;
+	color: red;
+	font-family: verdana, Arial;
+	list-style-type: disc;
+}
+.AlternateRow5
+{
+	font-size: 11px;
+	color:Black; 
+	font-family: Verdana, Arial;
+	background-color: white;
+	text-align: Left;
+	
+}
+.AttachmentMsg
+{
+    font-weight: normal;
+    font-size :10pt;
+    list-style-position: outside;
+    color:#330099;
+    font-style:normal;
+    font-family:Verdana;
+    list-style-type: disc;            
+
+}
+.colorofScrollbar
+{
+scrollbar-face-color:0099FF;
+scrollbar-arrow-color:#FFFFFF;
+scrollbar-track-color:#DDDDFF;
+scrollbar-shadow-color:'';
+scrollbar-highlight-color:'';
+scrollbar-3dlight-color:'';
+scrollbar-darkshadow-Color:'';
+
+}
+
